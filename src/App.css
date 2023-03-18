@@ -1,40 +1,37 @@
 .calculator {
-  position: absolute;
-  cursor: move;
+  position: fixed; /* Change from absolute to fixed */
   top: 20%;
   left: 50%;
   transform: translate(-50%, -20%);
-  padding: 1rem;
+  padding: 1rem 0.5rem; /* Add padding to left and right */
   border: 1px solid #ccc;
-  background-color: #eef;
-  /*width: 400px;*/
-  max-width: 215px;
-  margin: auto;
-  user-select: none;
-  border-radius: 5px;
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  z-index: 9999;
 }
-
-
 
 .header {
   cursor: move;
-  font-size: 0.5rem; /* Decreased font size */
+  font-size: 1.25rem; /* Reduce font size */
 }
 
 .input-group {
-  margin: 1rem 0;
+  margin: 1rem 0 0.5rem; /* Add margin-bottom */
   display: flex;
   flex-direction: column;
 }
 
 label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem; /* Reduce margin */
+  font-size: 0.9rem; /* Reduce font size */
 }
 
 input[type='number'] {
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 button {
@@ -44,11 +41,11 @@ button {
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .results {
   margin-top: 1rem;
-  font-size: 1rem; /* Decreased font size */
 }
 
 .results p {
@@ -56,5 +53,5 @@ button {
 }
 
 .results p:first-of-type {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
