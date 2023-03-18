@@ -48,6 +48,7 @@ button {
 
 .results {
   margin-top: 1rem;
+  font-size: 1rem; /* Decreased font size */
 }
 
 .results p {
@@ -55,5 +56,5 @@ button {
 }
 
 .results p:first-of-type {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
